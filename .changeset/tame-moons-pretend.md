@@ -2,4 +2,4 @@
 "native-lang-ts": patch
 ---
 
-sei la mano
+sei la
