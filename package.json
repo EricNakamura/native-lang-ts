@@ -8,7 +8,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup index.ts --format cjs,esm --dts",
-    "lint": "tsc"
+    "lint": "tsc",
+    "version": "changeset version"
   },
   "keywords": [],
   "author": "",
