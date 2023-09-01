@@ -19,7 +19,7 @@ jobs:
           with: 
             version: 7
           
-        - uses: pnpm install --frozen-lockfile
+        - run: pnpm install --frozen-lockfile
         - name: Create Release Pull Request or Publish
           id: changesets
           uses: changesets/action@v1
