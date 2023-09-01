@@ -6,25 +6,24 @@ on:
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 jobs:
-  build:
+  release:
+    name: Release
     runs-on: ubuntu-latest
     steps:
-        - uses: actions/checkout@v3
-        - uses: pnpm/action-setup@v2
-          with: 
-            version: 8
-        - uses: actions/setup-node@v3
-          with:
-            node-version: 16
-            cache: "pnpm"
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: "pnpm"
 
-        
-          
-        - run: pnpm install --frozen-lockfile
-        - name: Create Release Pull Request or Publish
-          id: changesets
-          uses: changesets/action@v1
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          with:
-            publish: pnpm run build
+      - run: pnpm install --frozen-lockfile
+      - name: Create Release Pull Request or Publish
+        id: changesets
+        uses: changesets/action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          publish: pnpm run build
