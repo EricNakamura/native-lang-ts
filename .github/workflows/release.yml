@@ -23,10 +23,12 @@ jobs:
 
       - name: Build
         run: pnpm build
-        
+
       - name: Create Release Pull Request or Publish
         id: changesets
         uses: changesets/action@v1
+        with:
+          version: pnpm version
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
