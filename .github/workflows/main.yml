@@ -1,22 +1,21 @@
 name: CI
 on:
-    push:
-        branches:
-            -"**"
+  push:
+    branches: -"**"
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v3
-            - uses: actions/setup-node@v3
-              with:
-                node-version: 16.x
-                cache: "pnpm"
-            - name: Setup pnpm
-              uses: pnpm/action-setup@v2
-              with:
-                version: 8
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+          cache: "pnpm"
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
 
-            - run: pnpm install --frozen-lockfile
-            - run: pnpm run lint && pnpm run build
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm run lint && pnpm run build
