@@ -9,11 +9,11 @@
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "lint": "tsc",
-    "version": "changeset version",
+    "release": "pnpm run lint && pnpm run build && pnpm changeset version",
     "dev": "ts-node src/index.ts",
     "test": "jest --verbose --watch"
   },
-  "keywords": [],
+  "keywords": ["multi-language"],
   "author": "",
   "license": "ISC",
   "devDependencies": {
