@@ -1,5 +1,11 @@
 # native-lang-ts
 
+## 0.0.7
+
+### Patch Changes
+
+- c9dd467: more adjustments
+
 ## 0.0.5
 
 ### Patch Changes
