@@ -1,5 +1,11 @@
 # native-lang-ts
 
+## 0.0.8
+
+### Patch Changes
+
+- d0c38f3: more and more adjustments
+
 ## 0.0.7
 
 ### Patch Changes
