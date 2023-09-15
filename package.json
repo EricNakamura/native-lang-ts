@@ -9,8 +9,7 @@
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "lint": "tsc",
-    "release": "pnpm run lint && pnpm run build && changeset publish",
-    "version": "changeset version",
+    "release": "pnpm run lint && pnpm run build && changeset version && changeset publish",
     "dev": "ts-node src/index.ts",
     "test": "jest --verbose --watch"
   },
