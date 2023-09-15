@@ -1,5 +1,11 @@
 # native-lang-ts
 
+## 0.0.5
+
+### Patch Changes
+
+- Main functionalities are implemented and working
+
 ## 0.0.4
 
 ### Patch Changes
