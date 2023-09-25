@@ -1,5 +1,5 @@
 {
-  "name": "native-lang-ts",
+  "name": "lang-ts",
   "version": "0.0.7",
   "description": "",
   "private": false,
@@ -13,11 +13,16 @@
     "dev": "ts-node src/index.ts",
     "test": "jest --verbose --watch"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EricNakamura/native-lang-ts/tree/main"
+  },
   "keywords": [
-    "multi-language"
+    "multi-language",
+    "typescript"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "Eric Nakamura",
+  "license": "MIT",
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
     "@jest/globals": "^29.6.4",

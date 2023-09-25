@@ -26,5 +26,6 @@ module.exports = {
     "linebreak-style": ["error", "windows"],
     quotes: ["error", "double"],
     semi: ["error", "never"],
+    "max-len": ["error", {"code": 120, "ignoreStrings": true, "ignoreTemplateLiterals": true}]  
   },
 }

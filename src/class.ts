@@ -78,10 +78,5 @@ export default class nativeLang implements INativeLang {
 
     return this.translator && this.translator.translate(key)
 
-    // const actual = this.getActualLanguage()
-    // if (this.options.Languages !== undefined && actual !== undefined){
-    //   return this.options.Languages[actual as keyof ILanguages][key as keyof keyof ILanguages]
-    // }
-    // return "not found"
   }
 }
